@@ -1,4 +1,4 @@
-# Doris (Provador Virtual)
+# Doris (Virtual Try-On) 🛒
 
 <!-- DOCS-IGNORE:start -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -8,60 +8,77 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- DOCS-IGNORE:end -->
 
-Um provador virtual que te dá o poder de experimentar roupas sem precisar ir à loja ou ficar colocando e tirando peças.
+Introducing Virtual Fitting Room Doris, a revolutionary tool that empowers you to try on clothes in the comfort of your home, without the need to travel to the store or the hassle of constantly putting on and taking off pieces.
 
-A IA da Doris, dá a possibilidade do seu cliente poder experimentar peças diretamente no seu corpo, fazer combinações e descobrir qual é o tamanho ideal para o seu tipo de corpo sem sair da sua casa.
+With artificial intelligence integrated into the platform, the customer has the unique opportunity to see the pieces directly on their body, explore different combinations, and find the perfect size for their body type, all without having to leave home.
 
 <img src="https://assets.website-files.com/645000b409645991ca395152/645023fae36dc9af099227e3_01-Widget.png" width="560"/>
 
-Com uma foto frontal e uma de perfil, seus clientes podem experimentar virtualmente todas as peças que estarão disponibilizadas na Doris e saber qual o tamanho ideal!
+Using only a front and profile photo, customers have access to the unique experience of virtually trying on all available pieces on the Doris platform, ensuring the discovery of the ideal size for each individual.
 
 <img src="https://assets.website-files.com/645000b409645991ca395152/6453fc9cbef8e5315e84627d_w-04.png" width="560"/>
 
-A Doris traz a tecnologia de Try-On, Mix&Match, Sizing e Recomendações para o seu e-commerce de moda, melhorando ainda mais a experiência de compra.
+Doris brings Try-On, Mix&Match, and Sizing technology, along with recommendations to enhance the shopping experience on its fashion e-commerce.
 
 <img src="https://assets.website-files.com/645000b409645991ca395152/6452aac3f96b4a1afb8058bd_T2.png" width="560"/>
 
-Transformando a experiência em eficiência: com mais conversões, aumento no engajamento e menos reversa!
+Transforming experience into efficiency: with more conversions, increased engagement, and fewer returns!
 
-## Informações Adicionais
+## Important Information ⚠️
 
-Para a instalação do widget Doris, é necessário: Possuir conta e credenciais Doris; permitir a instalação do Módulo VTEX/Doris de maneira adequada para atender:
+For the installation of the Doris widget, it is necessary to have a Doris account and credentials to allow the proper installation of the VTEX/Doris Module, including:
 
-- Instalação do Widget;
-- Integração do catálogo de produtos;
-- Manutenção do catálogo (atualização);
-- E, a integração com o carrinho de compra.
+- Widget installation; ✅
+- Integration of the product catalog; ✅
+- Catalog maintenance (updates); ✅
+- Integration with the shopping cart. ✅
 
-Para eventuais dúvidas, consulte a documentação para obter mais informações sobre como ter acesso a Doris ou entre em contato através de nosso site.
+## Compatibility 🧩
 
-## Instalação
+This app is only compatible with VTEX IO stores.
 
-1. Instale o App de Provador da Doris Mobi no seu ambiente VTEX, você pode utilizar o VTEX IO Toolbelt (CLI), usando 0 seguinte comando:
+## Installation 💻
+
+Before installing the Doris Mobi Fitting Room app in your VTEX environment, you'll need to use the [VTEX IO Toolbelt (CLI)](https://developers.vtex.com/docs/guides/vtex-io-documentation-vtex-io-cli-install), and after its installation, proceed with the following steps:
+
+
+1. To install the app, simply run the following command in your VTEX account:
 
 ```sh
-vtex install codeby.dorismobi@0.3.9
+vtex install codeby.dorismobi@0.3.18
 ```
 
-2. Configure via admin, na seção Doris Settings no app store as seguintes informações abaixo:
+Access the /apps route in the store's admin. In the list of installed apps, look for our app, which should be displayed as follows:
 
-- Public Api Key;
-- Private Api Key;
-- Capa da abertura: imagem a ser utilizada na abertura do app ao clicar no botão;
-- Imagem de background do botão: campo opcional, ao qual o usuário pode inserir uma imagem no botão;
-- Cor primária: caso opte por não utilizar uma imagem, pode ser inserido somente uma cor no botão em hexadecimal;
-- Qual é o parâmetro de identificação única dos seus produtos: forma como os produtos podem ser identificados, como EAN e Vtex_id;
-- Qual é atributo que identifica o código único da cor?
-- Informe o parâmetro que identifica o tamanho (size specification);
-- Informe o atributo que identifica a marca do produto;
-- Informe o atributo que identifica o código único dos produtos;
-- Chave da Vtex e Token da Vtex: poderá ser verificado como cadastrar no seguinte link: <https://help.vtex.com/pt/tutorial/chaves-de-aplicacao--2iffYzlvvz4BDMr6WGUtet>
+<img src="https://github.com/codeby-global/codeby.doris-mobi/assets/19894638/2e3dba67-65ef-484e-a5ec-930ad34c65c1" width="460"/>
+
+
+2. Go to the app's "Settings" and configure the following information according to your integration and store data:
+
+- Public Api Key Doris;
+- Private Api Key Doris;
+- Opening cover: image to be used in the app's opening when clicking the button, for example:
+  <img src="https://github.com/codeby-global/codeby.doris-mobi/assets/14927925/7905b030-29b5-41b8-b2ff-4f1313bea0d7" width="460"/>
+- Button background image: optional field, where the user can insert an image on the button, for example:
+  <img src="https://github.com/codeby-global/codeby.doris-mobi/assets/14927925/7bfd5a71-2345-43c3-8059-3546644a02a3" width="460"/>
+- Primary color: if you choose not to use an image, you can enter only a color on the button in hexadecimal;
+- What is the unique identification parameter for your products: how products can be identified, such as:
+  - Product reference code (Ref_id)
+  - EAN
+  - Vtex product ID (Vtex_id);
+- What attribute identifies the unique color code?
+- Provide the parameter that identifies the size (size specification);
+- Provide the attribute that identifies the product brand;
+- Provide the attribute that identifies the unique product codes;
+- Vtex Key and Vtex Token: can be checked on how to register at the following link: <https://help.vtex.com/pt/tutorial/chaves-de-aplicacao--2iffYzlvvz4BDMr6WGUtet>
   - Vtex App Key;
   - Vtex App Token;
 
-- **Busque diretamente o app em:** <https://mystore.myvtex.com/admin/apps/>
+Example:
 
-3. Adicione o `codeby.dorismobi` como uma peerDependencies no seu `manifest.json`:
+<img src="https://github.com/codeby-global/codeby.doris-mobi/assets/19894638/1b939b25-289d-4d66-bbbc-f723bf0db811" width="560"/>
+
+3. Add `codeby.dorismobi` as a peerDependencies in your theme's `manifest.json`:
 
 ```json
   peerDependencies: {
@@ -69,8 +86,7 @@ vtex install codeby.dorismobi@0.3.9
   }
 ```
 
-4. Adicione o bloco `"doris-button"` no seu tema, dentro de um context de produto, por exmplo:
-   em baixo do botão de comprar/adicionar ao carrinho.
+4. Add the `"doris-button"` block to your theme. It needs to be within the structure of the [Vtex product page](https://developers.vtex.com/docs/guides/vtex-io-documentation-building-a-product-details-page), for example, below the buy/add to cart button.
 
 ```json
 {
@@ -101,7 +117,7 @@ vtex install codeby.dorismobi@0.3.9
 }
 ```
 
-## Resultado
+## Result 🎯
 
 <img src="https://codeby.vteximg.com.br/arquivos/doris-mobi-screen-1.png" width="560"/>
 <br/>
@@ -109,24 +125,16 @@ vtex install codeby.dorismobi@0.3.9
 
 <!-- DOCS-IGNORE:start -->
 
-## Contribuidores
+## Contributors 🧑‍💻
 
-Desenvolvido por:
+Developed by:
 
 <a href="https://codeby.global/" target="_blank" alt="Codeby"><img src="https://codeby.global/cdn/shop/files/logo-default-v2.png?v=1684868339&width=120"></a>
-
-Contribuição:
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 <!-- DOCS-IGNORE:end -->
 
-## Termos e Condições
+## Terms and Conditions 📃
 
 [Termos de Uso e Política de Privacidade](https://www.doris.mobi/termos-e-condicoes-e-politica-de-privacidade)
