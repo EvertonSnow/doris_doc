@@ -73,6 +73,63 @@ Access the /apps route in the store's admin. In the list of installed apps, look
 - Vtex Key and Vtex Token: can be checked on how to register at the following link: <https://help.vtex.com/pt/tutorial/chaves-de-aplicacao--2iffYzlvvz4BDMr6WGUtet>
   - Vtex App Key;
   - Vtex App Token;
+  - Catalog, Vtex IO, Logistics, Master data, Vtable ⚠️
+
+  The access key needs to have at minimum the following permissions:
+
+## Catalog:
+
+* Product Management
+* Product Form
+* SKU Images Management
+* Product and SKU Management
+* Fields List
+* Attributes Management
+* Value Fields List
+* Attribute Values Management
+* Category
+* Similar Category
+* Price Range
+* Providers
+* Supplier Management
+* Groups
+* Brands
+* SKUs
+* Field Validation
+* Value Field Validation
+
+
+## Vtex IO - Infrastructure:
+
+* Read Workspace Apps
+* Link App
+* Install App
+* Vbase Read Only
+* Vbase Read Write
+* Read Workspace Services
+* Install Service
+* Log Access - Read-only
+* Read Published Service
+* Debug App
+* Import Redirects
+* Workspace Manipulation
+* Read Edition
+* Allow APP Configuration
+* Change Sponsored Tenant Edition
+
+## Logistics - Logistics Viewer:
+
+* Logistics Inventory Read Only
+* Logistics Shipping Read Only
+* Transportation Read Only
+
+## Master Data - Generic Resources:
+
+* Access to Insert and Edit but Not to Delete
+
+## Vtable 
+* Main Access
+##
 
 Example:
 
